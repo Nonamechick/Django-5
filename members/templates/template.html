@@ -1,0 +1,279 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<p>BEFORE In myfirst.css you can see what the stylesheet looks like.AFTER IN MY GLOBAL.CSS YOU CAN SEE WHAT IT LOOKS LIKE</p>
+
+</body>
+</html>  -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+        <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+<p>In views.py you can see how to import and fetch members from the database.</p>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+  {% endfor %}
+</ul>
+
+<p>In views.py you can see how to import and fetch members from the database.</p>
+
+</body>
+</html> -->                  
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello {{ firstname }}, how are you?</h1>
+
+<p>In views.py you can see how to create the variable.</p>
+<p>In template.html you can see how to use the variable.</p>
+
+</body>
+</html>  --> 
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<p>In views.py you can see what the fruits variable looks like.</p>
+
+</body>
+ -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+{% for x in cars %}
+  <h1>{{ x.brand }}</h1>
+  <p>{{ x.model }}</p>
+  <p>{{ x.year }}</p>
+{% endfor %} 
+
+<p>In views.py you can see what the cars variable looks like.</p>
+
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+{% for x in members %}
+  <h1>{{ x.id }}</h1>
+  <p>
+    {{ x.firstname }}
+    {{ x.lastname }}
+  </p>
+{% endfor %}  
+
+<p>In views.py you can see how to import and fetch members from the database.</p>
+
+</body>
+</html>  --> 
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+{% for x in members reversed %}
+  <h1>{{ x.id }}</h1>
+  <p>
+    {{ x.firstname }}
+    {{ x.lastname }}
+  </p>
+{% endfor %}  
+
+<p>In views.py you can see how to import and fetch members from the database.</p>
+
+</body>
+</html> -->   
+
+<!-- empty<!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in emptytestobject %}
+    <li>{{ x.firstname }}</li>
+  {% empty %}
+    <li>No members</li>
+  {% endfor %}
+</ul> 
+
+<p>In views.py you can see the emptytestobject.</p>
+
+</body>
+</html>  -->   
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.counter0 }}</li>
+  {% endfor %}
+</ul>
+
+<p>In views.py you can see what the fruits object looks like.</p>
+
+</body>
+</html>  --> 
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.counter0 }}</li>
+  {% endfor %}
+</ul>
+
+<p>In views.py you can see what the fruits object looks like.</p>
+
+</body>
+</html>  --> 
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in fruits %}
+    <li
+      {% if forloop.last %}
+        style='background-color:lightblue;'
+      {% endif %}
+    >{{ x }}</li>
+  {% endfor %}
+</ul> 
+
+<p>In views.py you can see what the fruits object looks like.</p>
+
+</body>
+</html>  -->                 
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.revcounter }}</li>
+  {% endfor %}
+</ul>
+
+<p>In views.py you can see what the fruits object looks like.</p>
+
+</body>
+</html>   -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.revcounter0 }}</li>
+  {% endfor %}
+</ul>
+
+<p>In views.py you can see what the fruits object looks like.</p>
+
+</body>
+</html>  -->           
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome Everyone</h1>
+{% comment "message blyat" %}
+  <h1>Welcome ladies and gentlemen</h1>
+{% endcomment %}
+
+</body> 
+</html>   -->     
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome{# Everyone#}</h1>
+
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello</h1>
+
+<p>This page contains a footer in a template.</p>
+
+{% include 'footer.html' %} 
+
+<p>Check out the two templates to see what they look like, and views.py to see the reference to the child template.</p>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+{% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %}
+
+<h1>Welcome</h1>
+
+<p>This is my web site.</p>
+
+<p>Check out mymenu.html to see the HTML content of the include.</p>
+
+</body>
+</html>  -->
